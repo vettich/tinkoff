@@ -56,6 +56,9 @@ type InitResponse struct {
 }
 
 func validateDateFormat(dateStr string) error {
+	if dateStr == "" {
+		return nil
+	}
 	_, err := time.Parse(RedirectDueDateFormat, dateStr)
 	return err
 }
