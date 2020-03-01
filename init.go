@@ -21,7 +21,7 @@ type InitRequest struct {
 	CustomerKey     string            `json:"CustomerKey"`
 	Data            map[string]string `json:"DATA"`
 	Receipt         *Receipt          `json:"Receipt"`
-	RedirectDueDate string            `json:"RedirectDueDate"`
+	RedirectDueDate string            `json:"RedirectDueDate,omitempty"`
 
 	NotificationURL string `json:"NotificationURL,omitempty"`
 	SuccessURL      string `json:"SuccessURL,omitempty"`
