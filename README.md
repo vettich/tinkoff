@@ -15,6 +15,7 @@ Based on some code from [koorgoo/tinkoff](https://github.com/koorgoo/tinkoff)
 - Init [(docs)](https://oplata.tinkoff.ru/develop/api/payments/init-description/)
 - Parse notification body [(docs)](https://oplata.tinkoff.ru/develop/api/notifications/setup-request/)
 - Cancel [(docs)](https://oplata.tinkoff.ru/develop/api/payments/cancel-description/)
+- Resend [(docs)](https://oplata.tinkoff.ru/develop/api/payments/resend-description/)
 
 
 ## Installation
