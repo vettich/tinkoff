@@ -16,12 +16,16 @@ type InitRequest struct {
 
 	Amount          uint64            `json:"Amount"`
 	OrderID         string            `json:"OrderId"`
-	ClientIP        string            `json:"IP"`
-	Description     string            `json:"Description"`
+	ClientIP        string            `json:"IP,omitempty"`
+	Description     string            `json:"Description,omitempty"`
 	CustomerKey     string            `json:"CustomerKey"`
 	Data            map[string]string `json:"DATA"`
 	Receipt         *Receipt          `json:"Receipt"`
 	RedirectDueDate string            `json:"RedirectDueDate"`
+
+	NotificationURL string `json:"NotificationURL,omitempty"`
+	SuccessURL      string `json:"SuccessURL,omitempty"`
+	FailURL         string `json:"FailURL,omitempty"`
 
 	// Not implemented yet:
 	// Recurrent
